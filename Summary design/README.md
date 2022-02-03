@@ -1,12 +1,14 @@
-# Data
+# Experimental Design Summary
+
+## Data
 เราใช้ข้อมูลรายการบัตรเครดิตที่เกิดขึ้นใรยูโรปเมื่อเดือนกันยายน 2013 โดยข้อมูลนี้มีรายการที่ฉ้อโกง(fraud) อยู่ 492 รายการจากทั้งหมด 284,807 รายการ (ข้อมูลมีปัญหา imbalance สูง) และข้อมูลนี้มีตัวแปรด้วยกัน 2 กลุ่มคือ 
 1) ตัวแปรที่ผ่านขั้นตอน pca :  V1,V2,V3,...,V28
 2) ตัวแปรที่ไม่ผ่านขั้นตอน pca : Time ,Amount 
 
-# Data Preparation
+## Data Preparation
 เราใช้ข้อมูลตัวแปร V1,V2,V3,...,V28 และ Amount เพื่อทำนายรายการที่ฉ้อโกง(fraud) โดยก่อนนำข้อมูลไปใช้เราได้ทำการปรับขอบเขตของข้อมูล (Features Scaling) ด้วยวิธี min - max scaling หลังจากนั้นก็แบ่งข้อมูลออกเป็น 2 ชุดคือ 80% traning set สำหรับสร้างโมเดล และ 20% test set สำหรับทดสอบโมเดล โดยเราจะทำการ Over-Sampling ข้อมูลใน traning set ด้วยเพื่อแก้ปัญหา imbalance สูง
 
-# Experiment
+## Experiment
 เราทำการทดลองสร้างโมเดลทำนายรายการที่ฉ้อโกง(fraud) ด้วยวิธี Deep Learning Multi-Layer Perceptron (MLP) ที่กำหนด loss function เป็น binary crossentropy และ Activation function ที่ output layer เป็น softmax โดยเราออกแบบลักษณะ MLP network ทั้งหมด 3 แบบดังนี้ 
 
 **แบบที่ 1 : Network 1 Hidden Layer**
