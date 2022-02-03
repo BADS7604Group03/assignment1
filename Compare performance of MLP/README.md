@@ -8,5 +8,5 @@
 
 
 # Hidden Layer = 3 layer
-![image](https://user-images.githubusercontent.com/87576892/152374518-59e5e5ba-deb3-4912-885a-4f9690e6d13d.png)
+![image](https://user-images.githubusercontent.com/87576892/152387438-9963e2e7-0076-418d-bb9a-a691e0e61b10.png)
 - [x] [Summary Result](./Hidden_Layer_3_layer.md) 
