@@ -1,12 +1,3 @@
-# BADS7604 Groupwork Assignment 1 : ML vs. MLP
-# Member 
-1) ณัฐภณ อัศวเหม 6310422052 (% contribution in this homework: 16.67%)
-2) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%)
-3) ดวงธิดา แซ่แต้ 6310422056 (% contribution in this homework: 16.67%)
-4) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%)
-5) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%)
-6) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%)
-
 # Data
 เราใช้ข้อมูลรายการบัตรเครดิตที่เกิดขึ้นใรยูโรปเมื่อเดือนกันยายน 2013 โดยข้อมูลนี้มีรายการที่ฉ้อโกง(fraud) อยู่ 492 รายการจากทั้งหมด 284,807 รายการ (ข้อมูลมีปัญหา imbalance สูง) และข้อมูลนี้มีตัวแปรด้วยกัน 2 กลุ่มคือ 
 1) ตัวแปรที่ผ่านขั้นตอน pca :  V1,V2,V3,...,V28
@@ -37,9 +28,3 @@
 4) Learning Rate : 0.001, 0.005
 5) Batch size : 256, 521, 1024
 6) Number of epoch : 10, 25, 50
-
-
-
-# Reference 
-https://www.kaggle.com/mlg-ulb/creditcardfraud
-https://www.kaggle.com/gpreda/credit-card-fraud-detection-predictive-models
