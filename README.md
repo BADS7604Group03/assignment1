@@ -14,5 +14,5 @@
 
 
 # Reference 
-- [.] https://www.kaggle.com/mlg-ulb/creditcardfraud
-- [.] https://www.kaggle.com/gpreda/credit-card-fraud-detection-predictive-models
+- https://www.kaggle.com/mlg-ulb/creditcardfraud
+- https://www.kaggle.com/gpreda/credit-card-fraud-detection-predictive-models
