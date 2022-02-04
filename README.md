@@ -10,7 +10,7 @@
 - [x] [Experimental design summary](./Summary%20design)
 - [x] [Compare performance of MLP](./Compare%20performance%20of%20MLP)
 - [x] [Compare between MLP and Traditional-ML](./Compare%20between%20traditional%20ML%20and%20MLP)
-- [x] [Recommend MLP VS Tranditional-ML](./Compare%20between%20traditional%20ML%20and%20MLP)
+- [x] [Recommend MLP VS Tranditional-ML](./Recommend%20MLP%20VS%20traditional%20ML)
 
 
 # Reference 
