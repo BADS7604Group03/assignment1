@@ -2,7 +2,7 @@
 ![image](https://user-images.githubusercontent.com/87576892/152379787-7ce6fbf1-b949-47ee-bbb7-83988339670a.png)
 - [x] [Summary Result](./Hidden_Layer_1_layer.md) 
 - :notebook: [JupyterNotebook 1](./code/6310422056_1layer_1node.ipynb)
-- :notebook: [JupyterNotebook 2](./code/)
+- :notebook: [JupyterNotebook 2](./code/6310422052_1layer_28and56node.ipynb)
 
 
 ## Hidden Layer = 2 layer
