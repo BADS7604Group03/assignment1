@@ -1,20 +1,22 @@
 # BADS7604 Groupwork Assignment 1 : ML vs. MLP
 # Member 
-1) ณัฐภณ อัศวเหม 6310422052 (% contribution in this homework: 16.67%)
-2) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%)
-3) ดวงธิดา แซ่แต้ 6310422056 (% contribution in this homework: 16.67%)
-4) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%)
-5) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%)
-6) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%)
+1) ณัฐภณ อัศวเหม 6310422052 (% contribution in this homework: 16.67%) : Hypertuing for 1 layer, write recommendation, Plot Acc/Loss for 1 Layer
+2) ดวงธิดา แซ่แต้ 6310422056 (% contribution in this homework: 16.67%) : Hypertuing for 1 layer, write summary result for 1 layer, Plot Acc/Loss for 2 Layer
+3) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%) :Hypertuing for 2 layer, write comparison Traditional-ML and MLP, Plot Acc/Loss for 3 Layer 
+4) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%) : Hypertuing for 2 layer, write summary result for 2 layer, write discussion and conclussion
+5) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%) : Hypertuing for 3 layer, write summary result for 3 layer, write reference
+6) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%) : Preparing a code for the experiment, Hypertuing for 3 layer, write experimental design
+
+## Objective 
+งานชิ้นนี้มีวัตถุงประสงค์เพื่อทดลองสร้างโมเดลจากข้อมูลชุดหนึ่งด้วยวิธี Traditional-ML และ Multiple layer perceptron (MLP) เพื่อเปรียบเทียบผลโดยทางทีมมีสมมติฐานว่าการใช้ Model แบบ Traditional-ML จะใช้เวลาในการ training น้อยกว่าการสร้างโมเดลด้วยวิธี MLP (Multiple layer perceptron) แต่ก็จะมีความแม่นยำน้อยกว่าด้วยเช่นกัน
 
 ## Quick Links
 - [x] [Experimental Design Summary](#Experimental-Design-Summary)
 - [x] [Compare performance of MLP](#Compare-performance-of-MLP)
 - [x] [Compare between MLP and Traditional-ML](#Compare-between-MLP-and-Traditional-ML)
-- [x] [Recommend MLP VS Tranditional-ML](#Recommend-MLP-VS-Traditional-ML)
+- [x] [Conclusion](#Conclusion)
 
 ## Experimental Design Summary
-
 ### Data
 เราใช้ข้อมูลรายการบัตรเครดิตที่เกิดขึ้นใรยูโรปเมื่อเดือนกันยายน 2013 โดยข้อมูลนี้มีรายการที่ฉ้อโกง(fraud) อยู่ 492 รายการจากทั้งหมด 284,807 รายการ (ข้อมูลมีปัญหา imbalance สูง) และข้อมูลนี้มีตัวแปรด้วยกัน 2 กลุ่มคือ 
 1) ตัวแปรที่ผ่านขั้นตอน pca :  V1,V2,V3,...,V28
@@ -23,7 +25,7 @@
 ### Data Preparation
 เราใช้ข้อมูลตัวแปร V1,V2,V3,...,V28 และ Amount เพื่อทำนายรายการที่ฉ้อโกง(fraud) โดยก่อนนำข้อมูลไปใช้เราได้ทำการปรับขอบเขตของข้อมูล (Features Scaling) ด้วยวิธี min - max scaling หลังจากนั้นก็แบ่งข้อมูลออกเป็น 2 ชุดคือ 80% traning set สำหรับสร้างโมเดล และ 20% test set สำหรับทดสอบโมเดล โดยเราจะทำการ Over-Sampling ข้อมูลด้วยเทคนิค SMOTE ใน traning set ด้วยเพื่อแก้ปัญหา imbalance สูง
 
-### Case Experiment
+### Network Architecture Design
 เราทำการทดลองสร้างโมเดลทำนายรายการที่ฉ้อโกง(fraud) ด้วยวิธี Deep Learning Multi-Layer Perceptron (MLP) ที่กำหนด loss function เป็น binary crossentropy และ Activation function ที่ output layer เป็น softmax โดยเราออกแบบลักษณะ MLP network ทั้งหมด 3 แบบดังนี้ 
 
 **แบบที่ 1 : Network 1 Hidden Layer**
@@ -38,14 +40,24 @@
 
 ![image](https://user-images.githubusercontent.com/87576892/152275205-82681b9d-1b26-4515-be84-23b878906fe1.png)
 
-และทำการทดสอบปรับค่า Parameter ทั้งหมด 6 ตัวดังนี้
-1) Number of neurous in each hidden layer : 1, 28, 56
-2) Activation function in hidden layer : relu, sigmoid
-3) Optimizer : sgd, adam
-4) Learning Rate : 0.001, 0.005
-5) Batch size : 256, 521, 1024
-6) Number of epoch : 10, 25, 50
+### Parameter tuning 
+ทางทีมทำการทดสอบปรับค่า Parameter ทั้งหมด 6 ตัวดังนี้
+**1) Number of neurous in each hidden layer** : 1, 28, 56
+
+**2) Activation function in hidden layer** : relu, sigmoid
+
+**3) Optimizer** : sgd, adam
+
+**4) Learning Rate** : 0.001, 0.005
+
+**5) Batch size** : 256, 521, 1024
+
+**6) Number of epoch** : 10, 25, 50
+
 ทั้งนี้ในการทดลองทางทีมได้กำหนดในจำนวน neurous หรือ node ในแต่ละ Layer มีจำนวนเท่ากันทั้งหมดเช่นที่การทดลอง 2 layer จำนวน 28 node หมายถึงมีจำนวน node ที่ hidden layer 1 จำนวน 28 node และที่ hidden layer 2 จำนวน 28 node เป็นต้น
+
+### Traing 
+โดยในการทดลองจะมีการกำหนด validation set ไว้ 20% (validation_split=0.2) และจะมีการคำนวณค่า auc,	f1score,	precision,	recall,	loss,	accuracy ไว้เพื่อใช้ในการเปรียบเทียบกับโมเดลอื่นๆ 
 
 ## Compare performance of MLP
 ## เปรียบเทียบผลลัพธ์จากการทดลองด้วย Hidden layers จำนวน 1 layers
@@ -101,15 +113,15 @@
 ![image](https://user-images.githubusercontent.com/71161635/152391947-2aaa5df9-48aa-49ca-95de-1fdc93ca5d72.png)
 
 •	จากการทดลองจะเห็นว่าถ้าเรา focus ดูที่ AUC score ของ traditional machine learning กับ deep learning เราจะพบว่า ค่าของ AUC score ทุก scenarios ของ deep learning นั้น ดีกว่าทุก scenarios ของ traditional models รวมถึง running time ที่ใช้นั้นใช้เวลาน้อยกว่าของ traditional machine learning ยกเว้น เพียงแค่ scenarios ของ 1 Hidden layer ที่ใช้ running time มากกว่า LightGBM แต่ทว่า AUC score ของ scenarios ของ 1 Hidden layer มีค่ามากกว่า 1.1% (0.9836 > 0.9729234)
-
 •	จากการทดลองจะเห็นว่า performance ของ deep learning นั้นยิ่งมี hidden layers เยอะจะยิ่งมี AUC score ที่ดีขึ้นและใช้ running time น้อยลง
 
-## Recommend MLP VS Traditional-ML
+## Conclusion
+### Recommend MLP VS Traditional-ML
 จากการทดลอง สรุปได้ว่าใน Datasets ที่นำมาทดลองนี้ การใช้ Deep Learning สามารถให้ผลที่เเม่นยำกว่า (เมื่อเทียบจากการใช้ AUC Score, F1-Score เป็นหลัก)
 โดยส่วนหนึงมาจากการทดลง fine-tune ค่า parameter ของโมเดลจนได้โมเดลที่ให้ผลลัพท์ที่ดีที่สุดในเเต่ละ Case (1,2 เเละ 3 layers)
 เเต่หากพิจารณาจากตัวเเบบของ Traditional ML ที่เรานำมาใช้ พบว่าความเเม่นยำก็อยู่ในระดับที่ค่อนข้างน่าพอใจ โดยหากทำการ Fine-tune parameter ของ
 Traditional ML มาใช้ดีๆเเล้ว ก็อาจทำให้โมเดลมีความเเม่นยำขึ้นได้อีก
-## Pros and Cons of MLP versus Traditional ML
+### Pros and Cons of MLP versus Traditional ML
 จากการทดลอง เราพอจะสรุปได้ว่า ประโยชน์ของ MLP หรือ Deep Learning นั้น สามารถนำมาใช้งาน Classification ในเเบบที่ Traditional ML สามารถนำไปทำได้
 โดยจุดได้เปรียบของ Deep Learning Algorithm อยู่ที่การจัดการข้อมูลที่มี Feature ค่อนข้างมาก เเละมีขนาดข้อมูลที่ใหญ่ ซึ่งจะให้ประสิทธิภาพที่สูงกว่า Traditional ML
 เเต่หากข้อมูลมี Features ที่ไม่ได้เยอะ หรือ ซับซ้อนมาก การใช้ Traditional ML ก็เป็นตัวเลือกที่ไม่ได้เเย่เเต่อย่างใด รวมถึงการอธิบาย ที่มา-ที่ไปของ Model นั้น
