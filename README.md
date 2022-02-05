@@ -9,9 +9,9 @@
 
 ## Quick Links
 - [x] [Experimental Design Summary](#Experimental-Design-Summary)
-- [x] [Compare performance of MLP](./Compare%20performance%20of%20MLP)
-- [x] [Compare between MLP and Traditional-ML](./Compare%20between%20traditional%20ML%20and%20MLP)
-- [x] [Recommend MLP VS Tranditional-ML](./Recommend%20MLP%20VS%20traditional%20ML)
+- [x] [Compare performance of MLP](#Compare-performance-of-MLP)
+- [x] [Compare between MLP and Traditional-ML](#Compare-between-MLP-and-Traditional-ML)
+- [x] [Recommend MLP VS Tranditional-ML](#Recommend-MLP-VS-Traditional-ML)
 
 ## Experimental Design Summary
 
@@ -46,6 +46,7 @@
 5) Batch size : 256, 521, 1024
 6) Number of epoch : 10, 25, 50
 
+## Compare performance of MLP
 ## เปรียบเทียบผลลัพธ์จากการทดลองด้วย Hidden layers จำนวน 1 layers
 
 ![image](https://user-images.githubusercontent.com/87576892/152378755-2f06a96c-ec56-4d3a-a9a9-e41394123fb1.png)
