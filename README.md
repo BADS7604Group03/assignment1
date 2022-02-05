@@ -21,7 +21,7 @@
 2) ตัวแปรที่ไม่ผ่านขั้นตอน pca : Time ,Amount 
 
 ### Data Preparation
-เราใช้ข้อมูลตัวแปร V1,V2,V3,...,V28 และ Amount เพื่อทำนายรายการที่ฉ้อโกง(fraud) โดยก่อนนำข้อมูลไปใช้เราได้ทำการปรับขอบเขตของข้อมูล (Features Scaling) ด้วยวิธี min - max scaling หลังจากนั้นก็แบ่งข้อมูลออกเป็น 2 ชุดคือ 80% traning set สำหรับสร้างโมเดล และ 20% test set สำหรับทดสอบโมเดล โดยเราจะทำการ Over-Sampling ข้อมูลใน traning set ด้วยเพื่อแก้ปัญหา imbalance สูง
+เราใช้ข้อมูลตัวแปร V1,V2,V3,...,V28 และ Amount เพื่อทำนายรายการที่ฉ้อโกง(fraud) โดยก่อนนำข้อมูลไปใช้เราได้ทำการปรับขอบเขตของข้อมูล (Features Scaling) ด้วยวิธี min - max scaling หลังจากนั้นก็แบ่งข้อมูลออกเป็น 2 ชุดคือ 80% traning set สำหรับสร้างโมเดล และ 20% test set สำหรับทดสอบโมเดล โดยเราจะทำการ Over-Sampling ข้อมูลด้วยเทคนิค SMOTE ใน traning set ด้วยเพื่อแก้ปัญหา imbalance สูง
 
 ### Case Experiment
 เราทำการทดลองสร้างโมเดลทำนายรายการที่ฉ้อโกง(fraud) ด้วยวิธี Deep Learning Multi-Layer Perceptron (MLP) ที่กำหนด loss function เป็น binary crossentropy และ Activation function ที่ output layer เป็น softmax โดยเราออกแบบลักษณะ MLP network ทั้งหมด 3 แบบดังนี้ 
@@ -45,6 +45,7 @@
 4) Learning Rate : 0.001, 0.005
 5) Batch size : 256, 521, 1024
 6) Number of epoch : 10, 25, 50
+ทั้งนี้ในการทดลองทางทีมได้กำหนดในจำนวน neurous หรือ node ในแต่ละ Layer มีจำนวนเท่ากันทั้งหมดเช่นที่การทดลอง 2 layer จำนวน 28 node หมายถึงมีจำนวน node ที่ hidden layer 1 จำนวน 28 node และที่ hidden layer 2 จำนวน 28 node เป็นต้น
 
 ## Compare performance of MLP
 ## เปรียบเทียบผลลัพธ์จากการทดลองด้วย Hidden layers จำนวน 1 layers
