@@ -1,11 +1,11 @@
 # BADS7604 Groupwork Assignment 1 : ML vs. MLP
 # Member 
-1) ณัฐภณ อัศวเหม 6310422052 (% contribution in this homework: 16.67%) : Hypertuing for 1 layer, write recommendation, Plot Acc/Loss for 1 Layer
-2) ดวงธิดา แซ่แต้ 6310422056 (% contribution in this homework: 16.67%) : Hypertuing for 1 layer, write summary result for 1 layer, Plot Acc/Loss for 2 Layer
-3) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%) :Hypertuing for 2 layer, write comparison Traditional-ML and MLP, Plot Acc/Loss for 3 Layer 
-4) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%) : Hypertuing for 2 layer, write summary result for 2 layer, write discussion and conclussion
-5) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%) : Hypertuing for 3 layer, write summary result for 3 layer, write reference
-6) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%) : Preparing a code for the experiment, Hypertuing for 3 layer, write experimental design
+1) ณัฐภณ อัศวเหม 6310422052 (% contribution in this homework: 16.67%)</br> Hypertuing for 1 layer, write recommendation, Plot Acc/Loss for 1 Layer
+2) ดวงธิดา แซ่แต้ 6310422056 (% contribution in this homework: 16.67%)</br> Hypertuing for 1 layer, write summary result for 1 layer, Plot Acc/Loss for 2 Layer
+3) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%)</br>Hypertuing for 2 layer, write comparison Traditional-ML and MLP, Plot Acc/Loss for 3 Layer
+4) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%)</br>Hypertuing for 2 layer, write summary result for 2 layer, write discussion and conclussion
+5) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%)</br>Hypertuing for 3 layer, write summary result for 3 layer, write reference
+6) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%)</br>Preparing a code for the experiment, Hypertuing for 3 layer, write experimental design
 
 ## Objective 
 งานชิ้นนี้มีวัตถุงประสงค์เพื่อทดลองสร้างโมเดลจากข้อมูลชุดหนึ่งด้วยวิธี Traditional-ML และ Multiple layer perceptron (MLP) เพื่อเปรียบเทียบผลโดยทางทีมมีสมมติฐานว่าการใช้ Model แบบ Traditional-ML จะใช้เวลาในการ training น้อยกว่าการสร้างโมเดลด้วยวิธี MLP (Multiple layer perceptron) แต่ก็จะมีความแม่นยำน้อยกว่าด้วยเช่นกัน
