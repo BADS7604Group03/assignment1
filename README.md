@@ -5,7 +5,7 @@
 3) เมธี ประเสริฐกิจพันธุ์ 6310422053 (% contribution in this homework: 16.67%)</br>Hypertuing for 2 layer, write comparison Traditional-ML and MLP, Plot Acc/Loss for 3 Layer
 4) พีรพัทธ ตั้งไพบูลย 6310422024 (% contribution in this homework: 16.67%)</br>Hypertuing for 2 layer, write summary result for 2 layer, write discussion and conclussion
 5) วิชิต ชำนาญนาวา 6310422055 (% contribution in this homework: 16.67%)</br>Hypertuing for 3 layer, write summary result for 3 layer, write reference
-6) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%)</br>Preparing a code for the experiment, Hypertuing for 3 layer, write experimental design
+6) ไตรทิพย์ ศุภศิริวัฒนา 6310422009 (% contribution in this homework: 16.67%)</br>Preparing a code for experiment, Hypertuing for 3 layer, write experimental design
 
 ## Objective 
 งานชิ้นนี้มีวัตถุงประสงค์เพื่อทดลองสร้างโมเดลจากข้อมูลชุดหนึ่งด้วยวิธี Traditional-ML และ Multiple layer perceptron (MLP) เพื่อเปรียบเทียบผลโดยทางทีมมีสมมติฐานว่าการใช้ Model แบบ Traditional-ML จะใช้เวลาในการ training น้อยกว่าการสร้างโมเดลด้วยวิธี MLP (Multiple layer perceptron) แต่ก็จะมีความแม่นยำน้อยกว่าด้วยเช่นกัน
@@ -15,6 +15,7 @@
 - [x] [Compare performance of MLP](#Compare-performance-of-MLP)
 - [x] [Compare between MLP and Traditional-ML](#Compare-between-MLP-and-Traditional-ML)
 - [x] [Conclusion](#Conclusion)
+- [x] [Reference](#Reference)
 
 ## Experimental Design Summary
 ### Data
@@ -130,7 +131,7 @@ Traditional ML มาใช้ดีๆเเล้ว ก็อาจทำใ�
 เเต่หากข้อมูลมี Features ที่ไม่ได้เยอะ หรือ ซับซ้อนมาก การใช้ Traditional ML ก็เป็นตัวเลือกที่ไม่ได้เเย่เเต่อย่างใด รวมถึงการอธิบาย ที่มา-ที่ไปของ Model นั้น
 ในส่วนของ Traditional ML Model นั้นอาจจะสามารถอธิบายได้ง่ายกว่าของ MLP 
 
-## Reference 
+## Reference
 - https://www.kaggle.com/mlg-ulb/creditcardfraud
 - https://www.kaggle.com/gpreda/credit-card-fraud-detection-predictive-models
 ## Reference: Library ที่สำคัญที่ใช้ใน Project ได้แก่ 
